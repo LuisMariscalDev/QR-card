@@ -1,0 +1,65 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light_gray: hsl(212, 45%, 89%);
+    --Grayish_blue: hsl(220, 15%, 55%);
+    --Dark_blue: hsl(218, 44%, 22%);
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--Light_gray);
+    font-family: "Outfit", sans-serif;
+}
+.container {
+    background-color: var(--White);
+    width: 300px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute; /* Para centrar vertical y horizontalmente */
+    top: 50%; /* Coloca la parte superior del contenedor en el 50% del viewport */
+    left: 50%; /* Coloca el lado izquierdo del contenedor en el 50% del viewport */
+    transform: translate(-50%, -50%); /* Centra el contenedor correctamente */
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+.heading {
+    color: var(--Dark_blue);
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+}
+.info {
+    font-size: 15px;
+    justify-content: center;
+}
